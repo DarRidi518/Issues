@@ -19,7 +19,7 @@ def food_choose_and_chek():
               summ_2 = summ_1 + 130
       elif drink == "Коктейль" or "Коктейль 'Баунти' " or "Коктейль Баунти":
               summ_2 = summ_1 + 150
-      else:
+      elif drink == "":
               summ_2 += 0
       snack = input('Снек?: ')
       if snack == "Картошка фри" or "Картофель фри":
