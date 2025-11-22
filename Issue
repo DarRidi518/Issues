@@ -1,0 +1,46 @@
+def food_choose_and_chek():
+      summ_1 = 0
+      summ_2 = 0
+      summ_3 = 0
+      total_summ = 0
+      pizza = input('\nКакую пиццу желаете?: ')
+      if pizza == "Пепперони":
+              summ_1 = summ_1 + 1200
+      elif pizza == "Маргарита":
+              summ_1 = summ_1 + 1000
+      elif pizza == "Четыре сыра":
+              summ_1 = summ_1 + 1000
+      elif pizza == "":
+              summ_1 = summ_1 + 0
+      drink = input('Напиток?: ')
+      if drink == "Кола" or "Спрайт" or "Фанта":
+              summ_2 = summ_1 + 80
+      elif drink == "Шоколадный милкшейк" or "Клубничный милкшйек" or "Ванильный милкшейк":
+              summ_2 = summ_1 + 130
+      elif drink == "Коктейль" or "Коктейль 'Баунти' " or "Коктейль Баунти":
+              summ_2 = summ_1 + 150
+      else:
+              summ_2 += 0
+      snack = input('Снек?: ')
+      if snack == "Картошка фри" or "Картофель фри":
+              summ_3 = summ_2 + 150
+      elif snack == "Луковые кольца":
+              summ_3 = summ_2 + 200
+      elif snack == "Палочки моцареллы":
+              summ_3 = summ_2 + 250
+      elif snack == "":
+              summ_3 = summ_2 + 0
+      desert = input('Десерт?: ')
+      if desert == "Ванильное мороженное" or "Шоколадное мороженное" or "Клубничное мороженное":
+              total_summ = summ_3 + 70
+      elif desert == "Тирамису" or "Пироженное тирамису":
+              total_summ = summ_3 + 200
+      elif desert == "Жаренный снег":
+              total_summ = summ_3 + 10000
+      elif desert == "":
+              total_summ = summ_3 + 0
+      print(summ_1)
+      print(summ_2)
+      print(summ_3)
+      print(total_summ)
+food_choose_and_chek()
